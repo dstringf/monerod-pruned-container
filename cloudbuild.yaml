@@ -2,5 +2,5 @@ steps:
 - name: 'gcr.io/cloud-builders/docker'
   args: [ 'build', '-t', 'gcr.io/$PROJECT_ID/monerod-pruned-container', '.' ]
 timeout: 86400s
-tags: ['latest']
+tags: ['latest', 'monero-0.17.1.8']
 images: ['gcr.io/$PROJECT_ID/monerod-pruned-container']
